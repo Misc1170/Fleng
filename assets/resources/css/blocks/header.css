@@ -1,0 +1,180 @@
+header {
+    min-height: 136px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap !important;
+    font-family: 'Inter';
+}
+
+header.borders {
+    padding:
+            0
+            calc(63px + (100vw - 1440px) * (35 / 480))
+            0
+            calc(69px + (100vw - 1440px) * (32 / 480));
+}
+
+header .text {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+header .text-right {
+    text-align: right;
+}
+
+header .logos {
+    width: 331px;
+
+    padding-top: 26px;
+    padding-bottom: 30px;
+}
+
+header .links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    column-gap: calc(0px + (100vw - 1440px) * (73 / 480));
+}
+
+header .collapse {
+    height: 100%;
+}
+
+header .collapse-kz {
+    min-width: 100%;
+}
+
+header .collapse-kz-open:focus,
+header .collapse-kz-open:hover,
+header .collapse-kz .collapse-kz-close:focus,
+header .collapse-kz .collapse-kz-close:hover {
+    border-color: transparent !important;
+}
+header .collapse-kz .collapse-kz-close {
+    margin: 0 0 0 1em;
+}
+
+header .collapse-kz .kz-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
+    align-items: center;
+    justify-content: end;
+}
+
+header .links .l-link,
+header .collapse-kz .kz-links .kz-link {
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    transition: .5s;
+}
+
+header .collapse-kz .kz-links .kz-links-contacts {
+    display: none;
+}
+
+header .links .contacts,
+header .collapse-kz .kz-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    row-gap: 1.5em;
+}
+
+header .links .contacts .contact,
+header .collapse-kz .kz-links .kz-links-contacts .kz-link-contact,
+header .collapse-kz .kz-contacts .kz-contact {
+    font-style: normal;
+    font-weight: 500;
+    color: #0177A6;
+    white-space: nowrap;
+    transition: .5s;
+}
+
+header .links .l-link:hover,
+header .links .contacts .contact:hover,
+header .collapse-kz .kz-links .kz-link:hover,
+header .collapse-kz .kz-links .kz-links-contacts .kz-link-contact:hover,
+header .collapse-kz .kz-contacts .kz-contact:hover {
+    text-shadow: 0 4px 6px rgba(1, 119, 166, 0.5);
+    transition: .5s;
+}
+
+@media (min-width: 1921px) {
+    header .logos {
+        width: fit-content;
+    }
+}
+@media (max-width: 1440px) {
+    header .logos {
+        width: calc(272px + (100vw - 1140) * (59 / 300));
+    }
+}
+
+@media (min-width: 1441px) {
+    header .collapse-kz-open {
+        display: none;
+    }
+}
+
+@media (max-width: 1440px) {
+    header .links {
+        display: none;
+    }
+
+    header .text {
+        font-size: 17px;
+        line-height: 21px;
+    }
+
+    header.borders {
+        padding: 0
+                 63px
+                 0
+                 69px;
+    }
+}
+
+@media (max-width: 1140px) {
+
+}
+
+@media (max-width: 1024px) {
+    header {
+        min-height: calc(50px + (100vw - 320px) * (54 / 704));
+    }
+
+    header .text {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    header .collapse-kz .kz-links {
+        column-gap: 0;
+        text-align: center;
+    }
+
+    header .collapse-kz .kz-contacts {
+        row-gap: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    header .collapse-kz .kz-links {
+        grid-template-columns: 1fr;
+        row-gap: 1em;
+    }
+
+    header .collapse-kz .kz-contacts {
+        display: none;
+    }
+
+    header .collapse-kz .kz-links .kz-links-contacts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 1em;
+        margin-bottom: 1.75em;
+    }
+}

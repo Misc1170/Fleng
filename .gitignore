@@ -1,0 +1,8 @@
+connectors
+core/
+manager
+node_modules
+setup
+.htaccess
+config.core.php
+error.log

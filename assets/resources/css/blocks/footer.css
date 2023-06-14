@@ -1,0 +1,139 @@
+footer {
+    background: url("/assets/resources/css/colours/E2E2E2.png");
+    margin-top: 1em;
+    padding-top: 56px;
+    padding-bottom: 44px;
+}
+
+footer .contacts a {
+    color: #0177A6 !important;
+}
+
+footer .contacts a:hover {
+    filter: drop-shadow(0px 4px 6px rgba(1, 119, 166, 0.5))
+}
+
+.footer-container {
+    justify-content: space-between;
+}
+
+.cellar {
+    margin-top: 94px;
+}
+
+footer .footer-container .contacts .link-contacts {
+    font-weight: 500;
+    font-size: calc(11px + (100vw - 320px) * (13 / 1600));
+    line-height: 29px;
+    color: #0177A6;
+}
+
+footer .footer-container .contacts .link-contacts + .link-contacts {
+    padding-left: 130px;
+}
+
+@media screen and (max-width: 1025px) {
+    footer {
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    footer .link-contacts {
+        font-size: 16px!important;
+    }
+
+    .cellar .company-info {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    footer {
+        padding: 1rem 1rem;
+    }
+
+    footer .link-contacts {
+        font-size: 14px!important;
+    }
+
+    .cellar .company-info {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 580px) {
+    footer .footer-container {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 576px) {
+    footer .footer-container {
+        display: block!important;
+    }
+
+    footer .contacts {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cellar {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    footer {
+        padding: 0 0;
+    }
+
+    footer .contacts a {
+        padding: 8px 16px;
+    }
+
+    footer .link-contacts {
+        font-size: 15px!important;
+    }
+
+    .cellar .company-info {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    footer {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    footer .link-contacts {
+        padding: 0 1rem!important;
+        font-size: 12px!important;
+    }
+
+    .cellar {
+        margin-top: 1.75em;
+    }
+}
+
+@media (max-width: 375px) {
+    .cellar {
+        margin-top: 1.5em;
+    }
+}
+
+@media (max-width: 320px) {
+    footer .footer-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 27px;
+        text-align: right;
+        color: #0177A6;
+    }
+
+    .cellar {
+        margin-top: 1em;
+    }
+}
