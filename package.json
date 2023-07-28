@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "dev": "npx tailwindcss -i ./assets/resources/css/style.css -o ./public/style.css --watch"
+  },
   "dependencies": {
     "bootstrap": "^5.3.0"
   },

@@ -1,16 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import './../scss/style.css'; */
-
 @font-face {
-    font-family: 'Acumin';
+    font-family: 'Acumin', sans-serif;
     src: url('/assets/resources/fonts/Acumin-Variable-Concept.ttf');
 }
 
-body {
-    font-family: 'Acumin' !important;
+h1,h2,h3,h4,h5,h6,p {
+    font-family: 'Acumin',sans-serif;
 }
+
 
 @media (max-width: 568px) {
     .overflow_more {
@@ -40,4 +39,9 @@ body {
     .more {
         display: block;
     }
+}
+
+.manufacture_img {
+    /* width: 412px; */
+    height: 175px;
 }
