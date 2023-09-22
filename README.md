@@ -1,4 +1,4 @@
-# [https://fluidcourse.ru/](https://fleng.kz/)
+# https://fleng.kz/
 
 ## Требования
 
