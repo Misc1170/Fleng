@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap !important;
-    font-family: 'Inter';
+    /* font-family: 'Acumin'; */
 }
 
 header.borders {

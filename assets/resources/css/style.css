@@ -1,13 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @font-face {
     font-family: 'Acumin', sans-serif;
     src: url('/assets/resources/fonts/Acumin-Variable-Concept.ttf');
 }
 
-h1,h2,h3,h4,h5,h6,p {
-    font-family: 'Acumin',sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Acumin', sans-serif;
 }
 
 
